@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,29 @@
     <link rel="shortcut icon" href="img/icono1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <nav class="menu">
-            <a href="./index.html">inicio</a>
-            <a href="./pages/nuestra-mision.html">nuestra mision</a>
-            <a href="./pages/Empresas.html">Empresas</a>
-            <a href="./pages/contacto.html">contacto</a>
-            <a href="./pages/nuestro servicio.html">nuestro servicio</a>
-        </nav>
-        <section class="titulo-header">
-            <h1>Seguros El Alamo</h1>
-            <h2>los mejores seguros para tu auto o empresa</h2>
-        </section>
+        <nav>
+            <img src="./img/logo-marca.png" alt="" class="logo">
+            <section>
+                <h1>Seguros El Alamo</h1>
+                <h2>los mejores seguros para tu auto o empresa</h2>
+            </section>
+            <input type="checkbox" name="" id="menu-movile">
+            <label for="menu-movile" class="menu-icono">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="menu">
+                <li><a href="./index.html">inicio</a></li>
+                <li><a href="./pages/nuestra-mision.html">nuestra mision</a></li>
+                <li><a href="./pages/Empresas.html">Empresas</a></li>
+                <li><a href="./pages/contacto.html">contacto</a></li>
+                <li><a href="./pages/nuestro-servicio.html">nuestros servicios</a></li>
+            </ul>
+        </nav>  
     </header>
     <main>
         <section class="content-mision">
@@ -30,11 +41,14 @@
                 <img src="img/ferrari.jpg" alt="nuestra-mision" class="img-mision">
                 <div class="contenido-textos">
                     <h3><span>1</span>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repudiandae libero beatae assumenda quasi vero nam laborum molestiae aut, qui architecto illum enim veniam recusandae!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam repudiandae libero beatae
+                        assumenda quasi vero nam laborum molestiae aut, qui architecto illum enim veniam recusandae!</p>
                     <h3><span>2</span>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatibus beatae quas earum, non optio iste dicta nihil aperiam voluptatum omnis eum amet dolor officia.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptatibus beatae quas earum, non
+                        optio iste dicta nihil aperiam voluptatum omnis eum amet dolor officia.</p>
                     <h3><span>3</span>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde molestiae quos velit mollitia suscipit esse ad labore vero a. Commodi molestiae beatae sit dolore nobis?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde molestiae quos velit mollitia
+                        suscipit esse ad labore vero a. Commodi molestiae beatae sit dolore nobis?</p>
                 </div>
             </div>
         </section>
@@ -43,38 +57,38 @@
                 <h2 class="titulo">Nuestros Servicios</h2>
                 <div class="galeria-serv">
                     <div class="img-serv">
-                        <img src="img/hogar.jpg" alt="mecanica asistida">
+                        <img src="img/mecanico.jpg" alt="mecanica asistida">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <img src="img/logo-mecanico.png" alt="">
+                            <p><b>Mecanica Asistida</b></p>
+                        </div>
+                    </div>
+                    <div class="img-serv">
+                        <img src="img/casa-seguro.jpg" alt="mecanica asistida">
+                        <div class="hover-galeria">
+                            <img src="img/logo-hogar.png" alt="">
                             <p><b>Seguros Del hogar</b></p>
                         </div>
                     </div>
                     <div class="img-serv">
-                        <img src="img/hogar.jpg" alt="mecanica asistida">
+                        <img src="img/fabricas.jpg" alt="mecanica asistida">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p><b>Seguros Del hogar</b></p>
+                            <img src="img/logo-Fabricas.png" alt="">
+                            <p><b>fabricas</b></p>
                         </div>
                     </div>
                     <div class="img-serv">
-                        <img src="img/hogar.jpg" alt="mecanica asistida">
+                        <img src="img/empresas.jpg" alt="mecanica asistida">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p><b>Seguros Del hogar</b></p>
+                            <img src="img/logo-empresas.png" alt="">
+                            <p><b>empresas</b></p>
                         </div>
                     </div>
                     <div class="img-serv">
-                        <img src="img/hogar.jpg" alt="mecanica asistida">
+                        <img src="img/vacaciones.jpg" alt="mecanica asistida">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p><b>Seguros Del hogar</b></p>
-                        </div>
-                    </div>
-                    <div class="img-serv">
-                        <img src="img/hogar.jpg" alt="mecanica asistida">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p><b>Seguros Del hogar</b></p>
+                            <img src="img/logo-vacaciones.png" alt="">
+                            <p><b>Seguros Del viajero</b></p>
                         </div>
                     </div>
                 </div>
@@ -87,47 +101,52 @@
                     <img src="img/experiencia.jpg" alt="testimonios">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos possimus perspiciatis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos possimus
+                            perspiciatis!</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="img/experiencia.jpg" alt="testimonios">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos possimus perspiciatis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos possimus
+                            perspiciatis!</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <h2 class="titulo">Contactos y Redes</h2>
-<footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <h3>enlases</h3>
+    <footer class="pie-pagina">
+        <h2 class="titulo">Contactos y Redes</h2>
+        <div class="grupo-1">
+            <div class="box">
+                <h2>enlases</h2>
                 <a href="pages/contacto.html">Contactanos</a>
                 <a href="pages/Empresas.html">Empresas</a>
                 <a href="pages/nuestra-mision.html">Nuestra Mision</a>
                 <a href="pages/nuestro servicio.html">Nuestros Servicios</a>
-        </div>
-        <div class="box">
-            <h2>sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit porro, voluptates officia deleniti iure deserunt ipsa id, perferendis repellat libero cupiditate vel incidunt! Error cum dicta et nostrum dolore.</p>
-        </div>
-        <div class="box">
-            <h2>siguenos</h2>
-            <div class="red-social">
-                <a href="#" class="fa-brands fa-facebook"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-twitter"></a>
-                <a href="#" class="fa-brands fa-youtube"></a>
-                <a href="#" class="fa-brands fa-github-alt"></a>
+            </div>
+            <div class="box">
+                <h2>sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit porro, voluptates officia
+                    deleniti iure deserunt ipsa id, perferendis repellat libero cupiditate vel incidunt! Error cum dicta
+                    et nostrum dolore.</p>
+            </div>
+            <div class="box">
+                <h2>siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                    <a href="#" class="fa-brands fa-github-alt"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2023 <b>Benjamin Soraire</b>- todos los derechos reservados</small>
-    </div> 
-</footer>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Benjamin Soraire</b>- todos los derechos reservados</small>
+        </div>
+    </footer>
 </body>
+
 </html>
