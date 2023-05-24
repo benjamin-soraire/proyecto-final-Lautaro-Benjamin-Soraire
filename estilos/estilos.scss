@@ -7,14 +7,17 @@
 
 /* SCSS HEX */
 /* SCSS HEX */
-$colorsubtitulo: #1f271bff;
-$colortexto: #0b4f6cff;
-$colorsubtitulo: #145c9eff;
-$background: #cbb9a8ff;
-$color2: #dcc7beff;
-$color3: #40bcd8ff;
-$colorsombra3: rgba(64, 188, 216, 0.364);
-$color4: #f39237ff;
+$colorsubtitulo:#121212 ;
+$colortexto: #1c4b52;
+$colorsubtitulo: #000000;
+$background: #242424;
+$color2:#24646e;
+$color3:#2d7d8a;
+$color-transparencia3: rgba(64, 188, 216, 0.364);
+$color4: #3597a6;
+
+
+
 
 
 
@@ -37,18 +40,24 @@ body {
         background-size: cover;
         height: 600px;
 
+        &.page-servicios {
+            background-image: url(../img/contratacion.jpg);
+        }
 
+        &.page-empresas{
+            background-image: url(../img/ciudad.jpg);
+        }
 
         h1 {
             color: $color4;
             font-size: 50px;
-            text-shadow: 2px 2px 4px $colortexto;
+            text-shadow: 2px 2px 4px $colorsubtitulo;
         }
 
         h2 {
-            color: $color4;
+            color: $color2;
             font-size: 30px;
-            text-shadow: 2px 2px 4px $colortexto;
+            text-shadow: 2px 2px 4px $colorsubtitulo;
         }
 
         @media (max-width: 768px) {
@@ -68,14 +77,14 @@ body {
                 h1 {
                     color: $color4;
                     font-size: 40px;
-                    text-shadow: 2px 2px 4px $colortexto;
+                    text-shadow: 2px 2px 4px $colorsubtitulo;
                     text-align: center;
                 }
 
                 h2 {
                     color: $color4;
                     font-size: 20px;
-                    text-shadow: 2px 2px 4px $colortexto;
+                    text-shadow: 2px 2px 4px $colorsubtitulo;
                     text-align: center;
                 }
             }
@@ -86,13 +95,13 @@ body {
             justify-content: space-between;
             align-items: center;
             background-color: $background;
-            color: $color3;
+            color: $color4;
             padding: 10px;
 
             .logo {
                 width: 100px;
                 height: 100px;
-                margin-right: 10px;
+                margin-left: 60px;
             }
 
             .menu-icono {
@@ -105,7 +114,7 @@ body {
                     display: block;
                     width: 25px;
                     height: 3px;
-                    background-color: $color2;
+                    background-color: $color4;
                     margin-bottom: 5px;
                     transition: transform 1s ease-in-out;
                 }
@@ -133,7 +142,7 @@ body {
                     align-items: center;
 
                     a {
-                        color: $colorsubtitulo;
+                        color: $color4;
                         text-decoration: none;
                         font-size: 25px;
                         text-align: center;
@@ -143,10 +152,10 @@ body {
                     }
 
                     a:hover {
-                        background-color: $colorsubtitulo;
-                        color: $color2;
+                        background-color: $color2;
+                        color: $colorsubtitulo;
                         border-radius: 25px;
-                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                        box-shadow: 0 0 5px $color4;
                     }
                 }
             }
@@ -222,14 +231,14 @@ body {
 
                     span {
                         background-color: $color4;
-                        color: $color2;
+                        color: $colorsubtitulo;
                         border-radius: 50%;
                         display: inline-block;
                         text-align: c;
                         width: 50px;
                         height: 50px;
                         padding: 1%;
-                        box-shadow: 0 0 6px 0 #269a96;
+                        box-shadow: 0 0 6px 0 $color4;
                         margin-right: 5px;
                     }
                 }
@@ -242,9 +251,9 @@ body {
         }
 
         .titulo {
-            color: $colorsubtitulo;
+            color: $color4;
             text-align: center;
-            font-size: 30px;
+            font-size: 60px;
             margin: 35px;
         }
 
@@ -258,7 +267,6 @@ body {
                 margin-right: 25px;
                 margin-left: 25px;
                 border-radius: 20px;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) 
             }
         }
 
@@ -267,20 +275,20 @@ body {
             margin-right: 25px;
 
             h3{
-                color: $colortexto;
+                color: $color3;
                 font-size: 30px;
                 margin-left: 10px;
 
             span {
-                background-color: $color3;
-                color: $color4;
+                background-color: $color4;
+                color: $colorsubtitulo;
                 border-radius: 50%;
                 display: inline-block;
                 text-align: center;
                 width: 60px;
                 height: 60px;
                 padding: 10px;
-                box-shadow: 0 0 6px 0 $colorsubtitulo;
+                box-shadow: 0 0 6px 0 $color4;
                 margin-right: 5px;
                 margin-top: 20px;
                 margin-bottom: 10px;
@@ -291,7 +299,7 @@ body {
                 padding: 25px;
                 font-weight: 300;
                 text-align: justify;
-                color: $color4;
+                color: $color2;
             }
         }
 
@@ -321,15 +329,15 @@ body {
                     margin-top: 15px;
 
                     span {
-                        background-color: $color3;
-                        color: $color4;
+                        background-color: $color4;
+                        color: $colorsubtitulo;
                         border-radius: 50%;
                         display: inline-block;
                         text-align: center;
                         width: 40px;
                         height: 40px;
                         padding: 10px;
-                        box-shadow: 0 0 6px 0 $colorsubtitulo;
+                        box-shadow: 0 0 6px 0 $color4;
                         margin-right: 15px;
                         margin-bottom: 10px;
                     }
@@ -346,9 +354,9 @@ body {
     //servicios//
 
     .titulo {
-        color: $colorsubtitulo;
+        color: $color4;
         text-align: center;
-        font-size: 30px;
+        font-size: 60px;
         margin: 35px;
     }
 
@@ -364,11 +372,11 @@ body {
             overflow: hidden;
             position: relative;
             cursor: pointer;
-            box-shadow: 0 0 6px 0 rgb(0, 0, 0, 1.5);
+            box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.6) ;
 
             &:hover .hover-galeria {
                 transform: scale(1);
-                background-color: $colorsombra3;
+                background-color: $color-transparencia3;
             }
         }
 
@@ -398,7 +406,7 @@ body {
             }
 
             p {
-                color: $color4;
+                color: $colorsubtitulo;
                 font-size: 35px;
                 text-shadow: 2px 2px 4px $colortexto
             }   
@@ -436,42 +444,48 @@ body {
     .contenedor-clientes {
 
         .titulo {
-            color: $colorsubtitulo;
+            color: $color4;
             text-align: center;
-            font-size: 30px;
-            margin: 35px;
+            font-size: 60px;
+            padding: 25px;
         }
 
         .cards {
             display: flex;
             justify-content: space-evenly;
+            padding: 55px;
 
             .card {
-                background-color: rgb(0, 255, 183);
+                background-color: $colorsubtitulo;
                 display: flex;
                 width: 46%;
-                height: 200px;
+                height: 350px;
                 align-items: center;
                 justify-content: space-evenly;
                 border-radius: 10px;
-                box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+                box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 
                 img {
-                    width: 100px;
-                    height: 100px;
+                    width: 180px;
+                    height: 180px;
                     object-fit: cover;
-                    border: 3px solid rgb(217, 58, 14);
+                    border: 3px solid rgba(255, 255, 255, 0.6);
                     border-radius: 50%;
                     display: block;
                 }
 
                 .contenido-texto-card {
-                    width: 60%;
-                    color: rgb(9, 120, 216);
+                    width: 70%;
+
+                    h4{
+                        font-size: 50px;
+                        color: $color4;
+                    }
 
                     p {
-                        font-weight: 1px;
+                        font-size: 25px;
                         padding-top: 5px;
+                        color: $colortexto;
                     }
                 }
             }
@@ -481,35 +495,45 @@ body {
             .cards {
                 display: flex;
                 justify-content: space-evenly;
+                padding: 25px;
 
                 .card {
-                    background-color: rgb(0, 255, 183);
+                    background-color:$colorsubtitulo;
                     display: flex;
                     width: 46%;
                     height: 200px;
                     align-items: center;
                     justify-content: space-evenly;
                     border-radius: 10px;
-                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+                    box-shadow: 0 0 6px rgb(255, 255, 255);
+                    padding: 4px;
 
                     img {
                         width: 80px;
                         height: 80px;
                         object-fit: cover;
-                        border: 2px solid rgb(217, 58, 14);
+                        border: 2px solid rgb(255, 255, 255);
                         border-radius: 50%;
                         display: block;
                     }
 
                     .contenido-texto-card {
                         width: 100%;
-                        color: rgb(9, 120, 216);
+
+                        h4{
+                            font-size: 30px;
+                            color: $color4;
+                            padding: 9px;
+                        }
+    
+                        p {
+                            font-size: 15px;
+                            padding-top: 5px;
+                            color: $color2;
+                            padding: 10px;
+                        }
                     }
 
-                    p {
-                        font-weight: 1px;
-                        padding-top: 5px;
-                    }
                 }
             }
         }
@@ -521,11 +545,13 @@ body {
         width: 100%;
         background-color: $background;
 
+
         .titulo {
-            color: $colorsubtitulo;
+            color: $color4;
             text-align: center;
-            font-size: 30px;
+            font-size: 60px;
             margin: 35px;
+            padding: 25px;
         }
 
 
@@ -539,14 +565,14 @@ body {
             margin: 50px;
 
             .box h2 {
-                color: $colorsubtitulo;
+                color: $color4;
                 margin-bottom: 25px;
-                font-size: 25px;
+                font-size: 35px;
             }
 
             p {
                 color: $colortexto;
-                font-size: large;
+                font-size: 25px;
             }
 
             a {
@@ -557,15 +583,15 @@ body {
                 color: $colorsubtitulo;
                 background-color: $background;
                 text-align: center;
-                transition: all 300ms ease;
-                font-size: 25px;
-                padding: 10px;
+                font-size: 30px;
+                padding: 15px;
             }
 
             a:hover {
                 color: $color4;
                 background-color: $background;
                 text-shadow: 0 0 10px $colorsubtitulo;
+                border-radius: 30px;
             }
 
             .red-social {
@@ -576,13 +602,13 @@ body {
                     width: 80px;
                     height: 80px;
                     line-height: 45px;
-                    color: $colortexto;
-                    
+                    color: $colorsubtitulo;
                     background-color: $color3;
                     text-align: center;
                     transition: all 300ms ease;
                     font-size: 45px;
                     border-radius: 50%;
+                    margin: 2px;
                 }
 
                 a:hover {
@@ -593,18 +619,18 @@ body {
             }
 
             .grupo-2 {
-                background-color: #de3c4bff;
+                background-color: $color2;
                 padding: 15px 10px;
                 text-align: center;
-                color: snow;
+                color: $colorsubtitulo;
             }
         }
 
         .grupo-2 {
-            background-color: #de3c4bff;
+            background-color: $color4;
             padding: 15px 10px;
             text-align: center;
-            color: snow;
+            color: $colorsubtitulo;
         }
 
         small {
@@ -628,14 +654,12 @@ body {
 
 
 .nuestros-servicios {
-
+    
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding-right: 40px;
     margin: 20px;
-
-
 
     .img-servicios {
         position: relative;
@@ -651,6 +675,12 @@ body {
             height: 100%;
             object-fit: cover;
         }
+
+        &:hover .texto-servicios{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
     }
 
     .texto-servicios {
@@ -660,60 +690,222 @@ body {
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
+        background-color: $color-transparencia3;
+        color: $colorsubtitulo;
         font-size: 1.2rem;
         opacity: 0;
         transform: translateY(30%);
         transition: opacity 0.3s ease, transform 0.3s ease;
-
-        &:hover {
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
+}
 
-    .clases-de-seguros {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        margin-bottom: 250px;
+.clases-de-seguros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 25px;
+    margin-bottom: 100px;
 
-        .seguro-1 {
-            position: relative;
-            height: 350px;
-        }
+
+
+    .seguro-1 {
+        position: relative;
+        height: 350px;
+        
+
 
         img {
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
-        }
-
-        .textos-galeria {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-
-            h2 {
-                margin-top: 0;
             }
 
-            &:hover {
-                transform: translateY(0);
-            }
+            .textos-galeria {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: $colorsubtitulo;
+                color: $color3;
+                padding: 20px;
+                box-sizing: border-box;
+                transform: translateY(100%);
+                transition: transform 0.5s ease;
 
+                    .textos-galeria h2 {
+                        margin-top: 0;
+                        }
+                }
+                &:hover .textos-galeria{
+                    transform: translateY(0);
+                    }
         }
-
-
     }
 
+    /*responsive para dispositivos moviles*/
 
-}
+@media screen and (max-width: 768px) {
+    .img-servicios {
+    height: 300px;
+    margin: 10px;
+    }
+    
+    .texto-servicios {
+    font-size: 1rem;
+    }
+    
+    .nuestros-servicios {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+    margin: 10px;
+    }
+    
+    .clases-de-seguros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    }
+    
+    .seguro-1 {
+    height: 20px;
+    }
+    
+    .textos-galeria {
+        margin-bottom: 60px;
+
+    }
+    }
+
+    //seguros empresas//
+
+
+
+    .contenedor-empresas{
+        
+        .titulo {
+            color: $color4;
+            text-align: center;
+            font-size: 40px;
+            margin: 35px;
+            padding: 35px;
+        }
+        
+
+        .seguro-empresas {
+            display: flex;
+            justify-content: flex-end;
+            padding: 25px;
+
+    
+            .textos-empresa {
+                color: $colortexto;
+                margin-right: 25px;
+                margin-left: 25px;
+                font-size: 40px;
+                }
+    
+                .video-empresas {
+                    margin-right: 25px;
+                    }
+            }
+            }
+
+            .cont-tipos-de-seguros{
+                
+                .empresas-aseguradas {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 30px;
+                    margin-bottom: 25px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    .tipos-de-empresas {
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 400px;
+                            }
+
+                            .text-overlay {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                background-color: $color-transparencia3;
+                                color: $colorsubtitulo;
+                                padding: 15px;
+                                opacity: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                transition: opacity 0.3s ease;
+                                width: 100%;
+                                height: auto;
+                                
+                                h3{
+                                    font-size: 45px;
+                                    }
+                            
+                                    p{
+                                        font-size: 25px;
+                                        color: $colorsubtitulo;
+                                        }
+                            }
+
+                            &:hover .text-overlay {
+                                opacity: 1;
+                                }
+                        }
+                    }
+            }
+
+            @media screen and (max-width: 768px) {
+
+                .seguro-empresas {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; 
+                align-items: center; 
+
+                .textos-empresa {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    font-size: 5px;
+                    }
+
+                .video-empresas {
+                    margin: 25px; 
+                    flex-basis: 100%; 
+
+                    video {
+                        width: 100%; 
+                        height: auto; 
+                        }
+                    }
+                }
+                .cont-tipos-de-seguros{
+
+                    .empresas-aseguradas {
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        
+                        .tipos-de-empresas img {
+                            height: auto;
+                            }
+                    }
+                }
+                
+                .video-empresas {
+                margin: 15px;
+                }
+                
+                .tipos-de-empresas img {
+                height: auto;
+                }
+                }
+
+                //nuestra mision//

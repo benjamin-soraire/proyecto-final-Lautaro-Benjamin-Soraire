@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #cbb9a8;
+  background-color: #242424;
   font-family: empire;
 }
 body header {
@@ -20,15 +20,21 @@ body header {
   background-size: cover;
   height: 600px;
 }
+body header.page-servicios {
+  background-image: url(../img/contratacion.jpg);
+}
+body header.page-empresas {
+  background-image: url(../img/ciudad.jpg);
+}
 body header h1 {
-  color: #f39237;
+  color: #3597a6;
   font-size: 50px;
-  text-shadow: 2px 2px 4px #0b4f6c;
+  text-shadow: 2px 2px 4px #000000;
 }
 body header h2 {
-  color: #f39237;
+  color: #24646e;
   font-size: 30px;
-  text-shadow: 2px 2px 4px #0b4f6c;
+  text-shadow: 2px 2px 4px #000000;
 }
 @media (max-width: 768px) {
   body header {
@@ -43,15 +49,15 @@ body header h2 {
     flex-direction: column;
   }
   body header section h1 {
-    color: #f39237;
+    color: #3597a6;
     font-size: 40px;
-    text-shadow: 2px 2px 4px #0b4f6c;
+    text-shadow: 2px 2px 4px #000000;
     text-align: center;
   }
   body header section h2 {
-    color: #f39237;
+    color: #3597a6;
     font-size: 20px;
-    text-shadow: 2px 2px 4px #0b4f6c;
+    text-shadow: 2px 2px 4px #000000;
     text-align: center;
   }
 }
@@ -59,14 +65,14 @@ body header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cbb9a8;
-  color: #40bcd8;
+  background-color: #242424;
+  color: #3597a6;
   padding: 10px;
 }
 body header nav .logo {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
+  margin-left: 60px;
 }
 body header nav .menu-icono {
   display: none;
@@ -78,7 +84,7 @@ body header nav .menu-icono .bar {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #dcc7be;
+  background-color: #3597a6;
   margin-bottom: 5px;
   transition: transform 1s ease-in-out;
 }
@@ -100,7 +106,7 @@ body header nav .menu li {
   align-items: center;
 }
 body header nav .menu li a {
-  color: #145c9e;
+  color: #3597a6;
   text-decoration: none;
   font-size: 25px;
   text-align: center;
@@ -109,10 +115,10 @@ body header nav .menu li a {
   border-radius: 25px;
 }
 body header nav .menu li a:hover {
-  background-color: #145c9e;
-  color: #dcc7be;
+  background-color: #24646e;
+  color: #000000;
   border-radius: 25px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px #3597a6;
 }
 @media (max-width: 768px) {
   body header nav .menu {
@@ -163,15 +169,15 @@ body header nav .menu li a:hover {
     margin-top: 15px;
   }
   body .content-mision .contenido-textos h3 span {
-    background-color: #f39237;
-    color: #dcc7be;
+    background-color: #3597a6;
+    color: #000000;
     border-radius: 50%;
     display: inline-block;
     text-align: c;
     width: 50px;
     height: 50px;
     padding: 1%;
-    box-shadow: 0 0 6px 0 #269a96;
+    box-shadow: 0 0 6px 0 #3597a6;
     margin-right: 5px;
   }
   body .content-mision .contenido-textos p {
@@ -180,9 +186,9 @@ body header nav .menu li a:hover {
   }
 }
 body .content-mision .titulo {
-  color: #145c9e;
+  color: #3597a6;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   margin: 35px;
 }
 body .content-mision .contenedor-mision {
@@ -195,27 +201,26 @@ body .content-mision .contenedor-mision .img-mision {
   margin-right: 25px;
   margin-left: 25px;
   border-radius: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 body .content-mision .contenido-textos {
   margin-bottom: 15px;
   margin-right: 25px;
 }
 body .content-mision .contenido-textos h3 {
-  color: #0b4f6c;
+  color: #2d7d8a;
   font-size: 30px;
   margin-left: 10px;
 }
 body .content-mision .contenido-textos h3 span {
-  background-color: #40bcd8;
-  color: #f39237;
+  background-color: #3597a6;
+  color: #000000;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
   width: 60px;
   height: 60px;
   padding: 10px;
-  box-shadow: 0 0 6px 0 #145c9e;
+  box-shadow: 0 0 6px 0 #3597a6;
   margin-right: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -224,7 +229,7 @@ body .content-mision .contenido-textos p {
   padding: 25px;
   font-weight: 300;
   text-align: justify;
-  color: #f39237;
+  color: #24646e;
 }
 @media screen and (max-width: 768px) {
   body .content-mision .titulo {
@@ -247,15 +252,15 @@ body .content-mision .contenido-textos p {
     margin-top: 15px;
   }
   body .content-mision .contenido-textos h3 span {
-    background-color: #40bcd8;
-    color: #f39237;
+    background-color: #3597a6;
+    color: #000000;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     width: 40px;
     height: 40px;
     padding: 10px;
-    box-shadow: 0 0 6px 0 #145c9e;
+    box-shadow: 0 0 6px 0 #3597a6;
     margin-right: 15px;
     margin-bottom: 10px;
   }
@@ -265,9 +270,9 @@ body .content-mision .contenido-textos p {
   }
 }
 body .titulo {
-  color: #145c9e;
+  color: #3597a6;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   margin: 35px;
 }
 body .galeria-serv {
@@ -282,7 +287,7 @@ body .galeria-serv .img-serv {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.6);
 }
 body .galeria-serv .img-serv:hover .hover-galeria {
   transform: scale(1);
@@ -311,9 +316,9 @@ body .galeria-serv .hover-galeria img {
   height: auto;
 }
 body .galeria-serv .hover-galeria p {
-  color: #f39237;
+  color: #000000;
   font-size: 35px;
-  text-shadow: 2px 2px 4px #0b4f6c;
+  text-shadow: 2px 2px 4px #1c4b52;
 }
 @media (max-width: 1200px) {
   body .galeria-serv .img-serv {
@@ -337,82 +342,96 @@ body .galeria-serv .hover-galeria p {
   }
 }
 body .contenedor-clientes .titulo {
-  color: #145c9e;
+  color: #3597a6;
   text-align: center;
-  font-size: 30px;
-  margin: 35px;
+  font-size: 60px;
+  padding: 25px;
 }
 body .contenedor-clientes .cards {
   display: flex;
   justify-content: space-evenly;
+  padding: 55px;
 }
 body .contenedor-clientes .cards .card {
-  background-color: rgb(0, 255, 183);
+  background-color: #000000;
   display: flex;
   width: 46%;
-  height: 200px;
+  height: 350px;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 10px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
 body .contenedor-clientes .cards .card img {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border: 3px solid rgb(217, 58, 14);
+  border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   display: block;
 }
 body .contenedor-clientes .cards .card .contenido-texto-card {
-  width: 60%;
-  color: rgb(9, 120, 216);
+  width: 70%;
+}
+body .contenedor-clientes .cards .card .contenido-texto-card h4 {
+  font-size: 50px;
+  color: #3597a6;
 }
 body .contenedor-clientes .cards .card .contenido-texto-card p {
-  font-weight: 1px;
+  font-size: 25px;
   padding-top: 5px;
+  color: #1c4b52;
 }
 @media screen and (max-width: 800px) {
   body .contenedor-clientes .cards {
     display: flex;
     justify-content: space-evenly;
+    padding: 25px;
   }
   body .contenedor-clientes .cards .card {
-    background-color: rgb(0, 255, 183);
+    background-color: #000000;
     display: flex;
     width: 46%;
     height: 200px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    padding: 4px;
   }
   body .contenedor-clientes .cards .card img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border: 2px solid rgb(217, 58, 14);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     display: block;
   }
   body .contenedor-clientes .cards .card .contenido-texto-card {
     width: 100%;
-    color: rgb(9, 120, 216);
   }
-  body .contenedor-clientes .cards .card p {
-    font-weight: 1px;
+  body .contenedor-clientes .cards .card .contenido-texto-card h4 {
+    font-size: 30px;
+    color: #3597a6;
+    padding: 9px;
+  }
+  body .contenedor-clientes .cards .card .contenido-texto-card p {
+    font-size: 15px;
     padding-top: 5px;
+    color: #24646e;
+    padding: 10px;
   }
 }
 body .pie-pagina {
   width: 100%;
-  background-color: #cbb9a8;
+  background-color: #242424;
 }
 body .pie-pagina .titulo {
-  color: #145c9e;
+  color: #3597a6;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
   margin: 35px;
+  padding: 25px;
 }
 body .pie-pagina .grupo-1 {
   width: 100%;
@@ -424,30 +443,30 @@ body .pie-pagina .grupo-1 {
   margin: 50px;
 }
 body .pie-pagina .grupo-1 .box h2 {
-  color: #145c9e;
+  color: #3597a6;
   margin-bottom: 25px;
-  font-size: 25px;
+  font-size: 35px;
 }
 body .pie-pagina .grupo-1 p {
-  color: #0b4f6c;
-  font-size: large;
+  color: #1c4b52;
+  font-size: 25px;
 }
 body .pie-pagina .grupo-1 a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #145c9e;
-  background-color: #cbb9a8;
+  color: #000000;
+  background-color: #242424;
   text-align: center;
-  transition: all 300ms ease;
-  font-size: 25px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 15px;
 }
 body .pie-pagina .grupo-1 a:hover {
-  color: #f39237;
-  background-color: #cbb9a8;
-  text-shadow: 0 0 10px #145c9e;
+  color: #3597a6;
+  background-color: #242424;
+  text-shadow: 0 0 10px #000000;
+  border-radius: 30px;
 }
 body .pie-pagina .grupo-1 .red-social a {
   display: inline-flex;
@@ -455,29 +474,30 @@ body .pie-pagina .grupo-1 .red-social a {
   width: 80px;
   height: 80px;
   line-height: 45px;
-  color: #0b4f6c;
-  background-color: #40bcd8;
+  color: #000000;
+  background-color: #2d7d8a;
   text-align: center;
   transition: all 300ms ease;
   font-size: 45px;
   border-radius: 50%;
+  margin: 2px;
 }
 body .pie-pagina .grupo-1 .red-social a:hover {
-  color: #f39237;
-  background-color: #cbb9a8;
-  text-shadow: 0 0 10px #145c9e;
+  color: #3597a6;
+  background-color: #242424;
+  text-shadow: 0 0 10px #000000;
 }
 body .pie-pagina .grupo-1 .grupo-2 {
-  background-color: #de3c4b;
+  background-color: #24646e;
   padding: 15px 10px;
   text-align: center;
-  color: snow;
+  color: #000000;
 }
 body .pie-pagina .grupo-2 {
-  background-color: #de3c4b;
+  background-color: #3597a6;
   padding: 15px 10px;
   text-align: center;
-  color: snow;
+  color: #000000;
 }
 body .pie-pagina small {
   font-size: 15px;
@@ -512,6 +532,10 @@ body .pie-pagina small {
   height: 100%;
   object-fit: cover;
 }
+.nuestros-servicios .img-servicios:hover .texto-servicios {
+  opacity: 1;
+  transform: translateY(0);
+}
 .nuestros-servicios .texto-servicios {
   position: absolute;
   bottom: 0;
@@ -519,49 +543,174 @@ body .pie-pagina small {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(64, 188, 216, 0.364);
+  color: #000000;
   font-size: 1.2rem;
   opacity: 0;
   transform: translateY(30%);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.nuestros-servicios .texto-servicios:hover {
-  opacity: 1;
-  transform: translateY(0);
-}
-.nuestros-servicios .clases-de-seguros {
+
+.clases-de-seguros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin-bottom: 250px;
+  margin: 25px;
+  margin-bottom: 100px;
 }
-.nuestros-servicios .clases-de-seguros .seguro-1 {
+.clases-de-seguros .seguro-1 {
   position: relative;
   height: 350px;
 }
-.nuestros-servicios .clases-de-seguros img {
+.clases-de-seguros .seguro-1 img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
-.nuestros-servicios .clases-de-seguros .textos-galeria {
+.clases-de-seguros .seguro-1 .textos-galeria {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background-color: #000000;
+  color: #2d7d8a;
   padding: 20px;
   box-sizing: border-box;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
-.nuestros-servicios .clases-de-seguros .textos-galeria h2 {
+.clases-de-seguros .seguro-1 .textos-galeria .textos-galeria h2 {
   margin-top: 0;
 }
-.nuestros-servicios .clases-de-seguros .textos-galeria:hover {
+.clases-de-seguros .seguro-1:hover .textos-galeria {
   transform: translateY(0);
+}
+
+/*responsive para dispositivos moviles*/
+@media screen and (max-width: 768px) {
+  .img-servicios {
+    height: 300px;
+    margin: 10px;
+  }
+  .texto-servicios {
+    font-size: 1rem;
+  }
+  .nuestros-servicios {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+    margin: 10px;
+  }
+  .clases-de-seguros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+  }
+  .seguro-1 {
+    height: 20px;
+  }
+  .textos-galeria {
+    margin-bottom: 60px;
+  }
+}
+.contenedor-empresas .titulo {
+  color: #3597a6;
+  text-align: center;
+  font-size: 40px;
+  margin: 35px;
+  padding: 35px;
+}
+.contenedor-empresas .seguro-empresas {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+}
+.contenedor-empresas .seguro-empresas .textos-empresa {
+  color: #1c4b52;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 40px;
+}
+.contenedor-empresas .seguro-empresas .video-empresas {
+  margin-right: 25px;
+}
+
+.cont-tipos-de-seguros .empresas-aseguradas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas {
+  position: relative;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas img {
+  width: 100%;
+  height: 400px;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas .text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(64, 188, 216, 0.364);
+  color: #000000;
+  padding: 15px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas .text-overlay h3 {
+  font-size: 45px;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas .text-overlay p {
+  font-size: 25px;
+  color: #000000;
+}
+.cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas:hover .text-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .seguro-empresas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .seguro-empresas .textos-empresa {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 5px;
+  }
+  .seguro-empresas .video-empresas {
+    margin: 25px;
+    flex-basis: 100%;
+  }
+  .seguro-empresas .video-empresas video {
+    width: 100%;
+    height: auto;
+  }
+  .cont-tipos-de-seguros .empresas-aseguradas {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .cont-tipos-de-seguros .empresas-aseguradas .tipos-de-empresas img {
+    height: auto;
+  }
+  .video-empresas {
+    margin: 15px;
+  }
+  .tipos-de-empresas img {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
