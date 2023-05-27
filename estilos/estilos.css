@@ -39,26 +39,22 @@ body header h2 {
 @media (max-width: 768px) {
   body header {
     height: 335px;
-    padding-bottom: 20px;
-  }
-  body header header {
-    background-image: url(../img/auto-rojo.jpg);
+    padding-bottom: 10px;
   }
   body header section {
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
   body header section h1 {
     color: #3597a6;
-    font-size: 40px;
+    font-size: 35px;
     text-shadow: 2px 2px 4px #000000;
-    text-align: center;
   }
   body header section h2 {
     color: #3597a6;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 2px 2px 4px #000000;
-    text-align: center;
   }
 }
 body header nav {
@@ -72,7 +68,6 @@ body header nav {
 body header nav .logo {
   width: 100px;
   height: 100px;
-  margin-left: 60px;
 }
 body header nav .menu-icono {
   display: none;
@@ -197,7 +192,8 @@ body .content-mision .contenedor-mision {
   font-size: 30px;
 }
 body .content-mision .contenedor-mision .img-mision {
-  width: 48%;
+  width: 60%;
+  height: 750px;
   margin-right: 25px;
   margin-left: 25px;
   border-radius: 20px;
@@ -221,12 +217,12 @@ body .content-mision .contenido-textos h3 span {
   height: 60px;
   padding: 10px;
   box-shadow: 0 0 6px 0 #3597a6;
-  margin-right: 5px;
+  margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 body .content-mision .contenido-textos p {
-  padding: 25px;
+  padding: 5px;
   font-weight: 300;
   text-align: justify;
   color: #24646e;
@@ -240,7 +236,8 @@ body .content-mision .contenido-textos p {
     align-items: center;
   }
   body .content-mision .contenedor-mision .img-mision {
-    width: 80%;
+    width: 500px;
+    height: 450px;
     margin: 0;
   }
   body .content-mision .contenido-textos {
@@ -391,13 +388,14 @@ body .contenedor-clientes .cards .card .contenido-texto-card p {
   body .contenedor-clientes .cards .card {
     background-color: #000000;
     display: flex;
-    width: 46%;
-    height: 200px;
+    width: 200px;
+    height: 400px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
     box-shadow: 0 0 6px rgb(255, 255, 255);
     padding: 4px;
+    flex-direction: column;
   }
   body .contenedor-clientes .cards .card img {
     width: 80px;
@@ -414,12 +412,14 @@ body .contenedor-clientes .cards .card .contenido-texto-card p {
     font-size: 30px;
     color: #3597a6;
     padding: 9px;
+    text-align: center;
   }
   body .contenedor-clientes .cards .card .contenido-texto-card p {
     font-size: 15px;
     padding-top: 5px;
     color: #24646e;
     padding: 10px;
+    text-align: center;
   }
 }
 body .pie-pagina {
@@ -711,6 +711,164 @@ body .pie-pagina small {
   .tipos-de-empresas img {
     height: auto;
   }
+}
+.contenedor-objetivo {
+  padding: 30px;
+}
+.contenedor-objetivo h3 {
+  color: #3597a6;
+  text-align: center;
+  font-size: 60px;
+  padding-top: 35px;
+}
+.contenedor-objetivo .contenido-info {
+  align-items: center;
+  margin: 0;
+  padding: 5px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo .video video {
+  height: 600px;
+  width: 800px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo .textos-obj {
+  text-align: center;
+  margin-left: 60px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo .textos-obj h4 {
+  color: #2d7d8a;
+  font-size: 40px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo .textos-obj p {
+  color: #1c4b52;
+  font-size: 30px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo-2 .video video {
+  height: 600px;
+  width: 800px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo-2 .textos-obj {
+  text-align: center;
+  margin-right: 40px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo-2 .textos-obj h4 {
+  color: #2d7d8a;
+  font-size: 40px;
+}
+.contenedor-objetivo .contenido-info .vid-objetivo-2 .textos-obj p {
+  color: #1c4b52;
+  font-size: 30px;
+}
+
+.cont-fortalezas h3 {
+  color: #3597a6;
+  text-align: center;
+  font-size: 60px;
+  padding: 25px;
+}
+.cont-fortalezas .contenido-fortalezas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 25px;
+}
+.cont-fortalezas .contenido-fortalezas .img-fortaleza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-fortalezas .contenido-fortalezas .img-fortaleza img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+.cont-fortalezas .contenido-fortalezas .textos-fortalezas,
+.cont-fortalezas .contenido-fortalezas .textos-objetivos {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+}
+.cont-fortalezas .contenido-fortalezas .textos-fortalezas h4,
+.cont-fortalezas .contenido-fortalezas .textos-objetivos h4 {
+  font-size: 40px;
+  color: #2d7d8a;
+}
+.cont-fortalezas .contenido-fortalezas ul {
+  margin-top: 20px;
+  list-style-type: circle;
+  padding: 0;
+}
+.cont-fortalezas .contenido-fortalezas li {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #24646e;
+}
+
+.cont-slides {
+  text-align: center;
+}
+.cont-slides h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.cont-slides .textos-obj {
+  margin-bottom: 40px;
+}
+.cont-slides .textos-obj h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.cont-slides .textos-obj p {
+  font-size: 14px;
+  color: gray;
+}
+.cont-slides .slides-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+.cont-slides .slides-container .Slides {
+  display: none;
+}
+.cont-slides .slides-container .Slides img {
+  width: 100%;
+  max-width: 200px;
+}
+.cont-slides .slides-container input[type=radio] {
+  display: none;
+}
+.cont-slides .slides-container input[type=radio]:checked ~ .Slides {
+  display: block;
+}
+.cont-slides .slides-container .slider-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cont-slides .slides-container .slider-nav label {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.cont-slides .slides-container .slider-nav label + label {
+  margin-left: 5px;
+}
+.cont-slides .slides-container .slider-nav input[type=radio]:checked ~ label {
+  background-color: black;
 }
 
 /*# sourceMappingURL=estilos.css.map */

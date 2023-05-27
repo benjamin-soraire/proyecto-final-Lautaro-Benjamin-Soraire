@@ -7,12 +7,12 @@
 
 /* SCSS HEX */
 /* SCSS HEX */
-$colorsubtitulo:#121212 ;
+$colorsubtitulo: #121212;
 $colortexto: #1c4b52;
 $colorsubtitulo: #000000;
 $background: #242424;
-$color2:#24646e;
-$color3:#2d7d8a;
+$color2: #24646e;
+$color3: #2d7d8a;
 $color-transparencia3: rgba(64, 188, 216, 0.364);
 $color4: #3597a6;
 
@@ -44,7 +44,7 @@ body {
             background-image: url(../img/contratacion.jpg);
         }
 
-        &.page-empresas{
+        &.page-empresas {
             background-image: url(../img/ciudad.jpg);
         }
 
@@ -60,32 +60,30 @@ body {
             text-shadow: 2px 2px 4px $colorsubtitulo;
         }
 
+
+
         @media (max-width: 768px) {
 
             height: 335px;
-            padding-bottom: 20px;
-
-            header {
-                background-image: url(../img/auto-rojo.jpg);
-            }
+            padding-bottom: 10px;
 
             section {
                 display: flex;
                 flex-direction: column;
+                padding: 20px;
 
 
                 h1 {
                     color: $color4;
-                    font-size: 40px;
+                    font-size: 35px;
                     text-shadow: 2px 2px 4px $colorsubtitulo;
-                    text-align: center;
+
                 }
 
                 h2 {
                     color: $color4;
-                    font-size: 20px;
+                    font-size: 15px;
                     text-shadow: 2px 2px 4px $colorsubtitulo;
-                    text-align: center;
                 }
             }
         }
@@ -101,7 +99,6 @@ body {
             .logo {
                 width: 100px;
                 height: 100px;
-                margin-left: 60px;
             }
 
             .menu-icono {
@@ -263,7 +260,8 @@ body {
             font-size: 30px;
 
             .img-mision {
-                width: 48%;
+                width: 60%;
+                height: 750px;
                 margin-right: 25px;
                 margin-left: 25px;
                 border-radius: 20px;
@@ -274,29 +272,29 @@ body {
             margin-bottom: 15px;
             margin-right: 25px;
 
-            h3{
+            h3 {
                 color: $color3;
                 font-size: 30px;
                 margin-left: 10px;
 
-            span {
-                background-color: $color4;
-                color: $colorsubtitulo;
-                border-radius: 50%;
-                display: inline-block;
-                text-align: center;
-                width: 60px;
-                height: 60px;
-                padding: 10px;
-                box-shadow: 0 0 6px 0 $color4;
-                margin-right: 5px;
-                margin-top: 20px;
-                margin-bottom: 10px;
+                span {
+                    background-color: $color4;
+                    color: $colorsubtitulo;
+                    border-radius: 50%;
+                    display: inline-block;
+                    text-align: center;
+                    width: 60px;
+                    height: 60px;
+                    padding: 10px;
+                    box-shadow: 0 0 6px 0 $color4;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
             }
-        }
 
             p {
-                padding: 25px;
+                padding: 5px;
                 font-weight: 300;
                 text-align: justify;
                 color: $color2;
@@ -315,7 +313,8 @@ body {
                 align-items: center;
 
                 .img-mision {
-                    width: 80%;
+                    width: 500px;
+                    height: 450px;
                     margin: 0;
                 }
             }
@@ -372,7 +371,7 @@ body {
             overflow: hidden;
             position: relative;
             cursor: pointer;
-            box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.6) ;
+            box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.6);
 
             &:hover .hover-galeria {
                 transform: scale(1);
@@ -409,7 +408,7 @@ body {
                 color: $colorsubtitulo;
                 font-size: 35px;
                 text-shadow: 2px 2px 4px $colortexto
-            }   
+            }
         }
 
         //responsive//
@@ -477,7 +476,7 @@ body {
                 .contenido-texto-card {
                     width: 70%;
 
-                    h4{
+                    h4 {
                         font-size: 50px;
                         color: $color4;
                     }
@@ -498,15 +497,16 @@ body {
                 padding: 25px;
 
                 .card {
-                    background-color:$colorsubtitulo;
+                    background-color: $colorsubtitulo;
                     display: flex;
-                    width: 46%;
-                    height: 200px;
+                    width: 200px;
+                    height: 400px;
                     align-items: center;
                     justify-content: space-evenly;
                     border-radius: 10px;
                     box-shadow: 0 0 6px rgb(255, 255, 255);
                     padding: 4px;
+                    flex-direction: column;
 
                     img {
                         width: 80px;
@@ -520,17 +520,19 @@ body {
                     .contenido-texto-card {
                         width: 100%;
 
-                        h4{
+                        h4 {
                             font-size: 30px;
                             color: $color4;
                             padding: 9px;
+                            text-align: center;
                         }
-    
+
                         p {
                             font-size: 15px;
                             padding-top: 5px;
                             color: $color2;
                             padding: 10px;
+                            text-align: center;
                         }
                     }
 
@@ -654,7 +656,7 @@ body {
 
 
 .nuestros-servicios {
-    
+
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -676,11 +678,11 @@ body {
             object-fit: cover;
         }
 
-        &:hover .texto-servicios{
+        &:hover .texto-servicios {
             opacity: 1;
             transform: translateY(0);
         }
-    
+
     }
 
     .texto-servicios {
@@ -711,201 +713,406 @@ body {
     .seguro-1 {
         position: relative;
         height: 350px;
-        
+
 
 
         img {
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
+        }
+
+        .textos-galeria {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $colorsubtitulo;
+            color: $color3;
+            padding: 20px;
+            box-sizing: border-box;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+
+            .textos-galeria h2 {
+                margin-top: 0;
             }
+        }
 
-            .textos-galeria {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background-color: $colorsubtitulo;
-                color: $color3;
-                padding: 20px;
-                box-sizing: border-box;
-                transform: translateY(100%);
-                transition: transform 0.5s ease;
-
-                    .textos-galeria h2 {
-                        margin-top: 0;
-                        }
-                }
-                &:hover .textos-galeria{
-                    transform: translateY(0);
-                    }
+        &:hover .textos-galeria {
+            transform: translateY(0);
         }
     }
+}
 
-    /*responsive para dispositivos moviles*/
+/*responsive para dispositivos moviles*/
 
 @media screen and (max-width: 768px) {
     .img-servicios {
-    height: 300px;
-    margin: 10px;
+        height: 300px;
+        margin: 10px;
     }
-    
+
     .texto-servicios {
-    font-size: 1rem;
+        font-size: 1rem;
     }
-    
+
     .nuestros-servicios {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-right: 0;
-    margin: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 0;
+        margin: 10px;
     }
-    
+
     .clases-de-seguros {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
     }
-    
+
     .seguro-1 {
-    height: 20px;
+        height: 20px;
     }
-    
+
     .textos-galeria {
         margin-bottom: 60px;
 
     }
+}
+
+//seguros empresas//
+
+
+
+.contenedor-empresas {
+
+    .titulo {
+        color: $color4;
+        text-align: center;
+        font-size: 40px;
+        margin: 35px;
+        padding: 35px;
     }
 
-    //seguros empresas//
+
+    .seguro-empresas {
+        display: flex;
+        justify-content: flex-end;
+        padding: 25px;
 
 
-
-    .contenedor-empresas{
-        
-        .titulo {
-            color: $color4;
-            text-align: center;
+        .textos-empresa {
+            color: $colortexto;
+            margin-right: 25px;
+            margin-left: 25px;
             font-size: 40px;
-            margin: 35px;
-            padding: 35px;
         }
-        
 
-        .seguro-empresas {
-            display: flex;
-            justify-content: flex-end;
-            padding: 25px;
+        .video-empresas {
+            margin-right: 25px;
+        }
+    }
+}
 
-    
-            .textos-empresa {
-                color: $colortexto;
-                margin-right: 25px;
-                margin-left: 25px;
-                font-size: 40px;
-                }
-    
-                .video-empresas {
-                    margin-right: 25px;
-                    }
-            }
-            }
+.cont-tipos-de-seguros {
 
-            .cont-tipos-de-seguros{
-                
-                .empresas-aseguradas {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 30px;
-                    margin-bottom: 25px;
-                    margin-left: 10px;
-                    margin-right: 10px;
+    .empresas-aseguradas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
 
-                    .tipos-de-empresas {
-                        position: relative;
+        .tipos-de-empresas {
+            position: relative;
 
-                        img {
-                            width: 100%;
-                            height: 400px;
-                            }
-
-                            .text-overlay {
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                bottom: 0;
-                                left: 0;
-                                background-color: $color-transparencia3;
-                                color: $colorsubtitulo;
-                                padding: 15px;
-                                opacity: 0;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: center;
-                                text-align: center;
-                                transition: opacity 0.3s ease;
-                                width: 100%;
-                                height: auto;
-                                
-                                h3{
-                                    font-size: 45px;
-                                    }
-                            
-                                    p{
-                                        font-size: 25px;
-                                        color: $colorsubtitulo;
-                                        }
-                            }
-
-                            &:hover .text-overlay {
-                                opacity: 1;
-                                }
-                        }
-                    }
+            img {
+                width: 100%;
+                height: 400px;
             }
 
-            @media screen and (max-width: 768px) {
-
-                .seguro-empresas {
+            .text-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: $color-transparencia3;
+                color: $colorsubtitulo;
+                padding: 15px;
+                opacity: 0;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center; 
-                align-items: center; 
-
-                .textos-empresa {
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    font-size: 5px;
-                    }
-
-                .video-empresas {
-                    margin: 25px; 
-                    flex-basis: 100%; 
-
-                    video {
-                        width: 100%; 
-                        height: auto; 
-                        }
-                    }
-                }
-                .cont-tipos-de-seguros{
-
-                    .empresas-aseguradas {
-                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                        
-                        .tipos-de-empresas img {
-                            height: auto;
-                            }
-                    }
-                }
-                
-                .video-empresas {
-                margin: 15px;
-                }
-                
-                .tipos-de-empresas img {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transition: opacity 0.3s ease;
+                width: 100%;
                 height: auto;
-                }
+
+                h3 {
+                    font-size: 45px;
                 }
 
-                //nuestra mision//
+                p {
+                    font-size: 25px;
+                    color: $colorsubtitulo;
+                }
+            }
+
+            &:hover .text-overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .seguro-empresas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .textos-empresa {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 5px;
+        }
+
+        .video-empresas {
+            margin: 25px;
+            flex-basis: 100%;
+
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .cont-tipos-de-seguros {
+
+        .empresas-aseguradas {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            .tipos-de-empresas img {
+                height: auto;
+            }
+        }
+    }
+
+    .video-empresas {
+        margin: 15px;
+    }
+
+    .tipos-de-empresas img {
+        height: auto;
+    }
+}
+
+//nuestra mision//
+
+.contenedor-objetivo {
+    padding: 30px;
+
+    h3 {
+        color: $color4;
+        text-align: center;
+        font-size: 60px;
+        padding-top: 35px;
+    }
+
+    .contenido-info {
+        align-items: center;
+        margin: 0;
+        padding: 5px;
+
+        .vid-objetivo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .video {
+                video {
+                    height: 600px;
+                    width: 800px;
+                }
+            }
+
+            .textos-obj {
+                text-align: center;
+                margin-left: 60px;
+
+                h4 {
+                    color: $color3;
+                    font-size: 40px;
+                }
+
+                p {
+                    color: $colortexto;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .vid-objetivo-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row-reverse;
+
+            .video {
+                video {
+                    height: 600px;
+                    width: 800px;
+                }
+            }
+
+            .textos-obj {
+                text-align: center;
+                margin-right: 40px;
+
+                h4 {
+                    color: $color3;
+                    font-size: 40px;
+                }
+
+                p {
+                    color: $colortexto;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+//movile//
+
+
+
+.cont-fortalezas {
+
+    h3 {
+        color: $color4;
+        text-align: center;
+        font-size: 60px;
+        padding: 25px;
+    }
+
+    .contenido-fortalezas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 25px;
+
+        .img-fortaleza {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+            }
+        }
+
+        .textos-fortalezas,
+        .textos-objetivos {
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+
+            h4 {
+                font-size: 40px;
+                color: $color3;
+            }
+        }
+
+        ul {
+            margin-top: 20px;
+            list-style-type: circle;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 30px;
+            color: $color2;
+        }
+    }
+}
+
+//movile//
+
+.cont-slides {
+    text-align: center;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .textos-obj {
+        margin-bottom: 40px;
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+    }
+
+    .slides-container {
+        position: relative;
+        margin-bottom: 30px;
+
+        .Slides {
+            display: none;
+
+            img {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        input[type="radio"] {
+            display: none;
+
+            &:checked~.Slides {
+                display: block;
+            }
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            label {
+                width: 10px;
+                height: 10px;
+                background-color: gray;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 5px;
+                cursor: pointer;
+
+                &+label {
+                    margin-left: 5px;
+                }
+            }
+
+            input[type="radio"]:checked~label {
+                background-color: black;
+            }
+        }
+    }
+}
