@@ -32,8 +32,8 @@ body {
     background-color: $background ;
     font-family: empire;
 
+//index//
 
-    //header//
     header {
 
         background-image: url(../img/auto-rojo.jpg);
@@ -48,15 +48,19 @@ body {
             background-image: url(../img/ciudad.jpg);
         }
 
+        &.nuestra-mision {
+            background-image: url(../img/sobre-nosotros.jpg);
+        }
+
         h1 {
             color: $color4;
-            font-size: 50px;
+            font-size: 30px;
             text-shadow: 2px 2px 4px $colorsubtitulo;
         }
 
         h2 {
             color: $color2;
-            font-size: 30px;
+            font-size: 20px;
             text-shadow: 2px 2px 4px $colorsubtitulo;
         }
 
@@ -141,7 +145,7 @@ body {
                     a {
                         color: $color4;
                         text-decoration: none;
-                        font-size: 25px;
+                        font-size: 20px;
                         text-align: center;
                         padding: 10px;
                         transition: background-color 0.2s ease-in-out;
@@ -261,7 +265,7 @@ body {
 
             .img-mision {
                 width: 60%;
-                height: 750px;
+                height: 400px;
                 margin-right: 25px;
                 margin-left: 25px;
                 border-radius: 20px;
@@ -280,13 +284,13 @@ body {
                 span {
                     background-color: $color4;
                     color: $colorsubtitulo;
-                    border-radius: 50%;
+                    border-radius: 40%;
                     display: inline-block;
                     text-align: center;
-                    width: 60px;
-                    height: 60px;
-                    padding: 10px;
-                    box-shadow: 0 0 6px 0 $color4;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    padding: 4px;
                     margin-right: 10px;
                     margin-top: 20px;
                     margin-bottom: 10px;
@@ -350,7 +354,6 @@ body {
         }
     }
 
-    //servicios//
 
     .titulo {
         color: $color4;
@@ -410,6 +413,8 @@ body {
                 text-shadow: 2px 2px 4px $colortexto
             }
         }
+    }
+
 
         //responsive//
 
@@ -437,7 +442,7 @@ body {
                 margin-bottom: 20px;
             }
         }
-    }
+
 
     //cards-de-clientes//
     .contenedor-clientes {
@@ -660,8 +665,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-right: 40px;
-    margin: 20px;
+
+    margin-bottom: 150px;
+
 
     .img-servicios {
         position: relative;
@@ -706,7 +712,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     margin: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 
 
 
@@ -915,7 +921,7 @@ body {
 //nuestra mision//
 
 .contenedor-objetivo {
-    padding: 30px;
+    padding: 25px;
 
     h3 {
         color: $color4;
@@ -994,6 +1000,7 @@ body {
 
 .cont-fortalezas {
 
+
     h3 {
         color: $color4;
         text-align: center;
@@ -1047,71 +1054,49 @@ body {
 
 //movile//
 
+
 .cont-slides {
-    text-align: center;
+    padding: 25px;
 
-    h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
+    h3 {
+        color: $color4;
+        text-align: center;
+        font-size: 60px;
+        padding: 90px;
     }
 
-    .textos-obj {
-        margin-bottom: 40px;
+    .contenido-slides {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
 
-        h4 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
+        .textos-obj {
+            text-align: center;
+            margin-right: 25px;
+            
+            h4 {
+                font-size: 40px;
+                color: $color3;
+            }
 
-        p {
-            font-size: 14px;
-            color: gray;
-        }
-    }
-
-    .slides-container {
-        position: relative;
-        margin-bottom: 30px;
-
-        .Slides {
-            display: none;
-
-            img {
-                width: 100%;
-                max-width: 200px;
+            p {
+                color: $color2;
+                font-size: 30px;
+                margin-top: 25px;
             }
         }
 
-        input[type="radio"] {
-            display: none;
+        .slides-container {
+            display: flex;
 
-            &:checked~.Slides {
-                display: block;
-            }
-        }
+            .slide {
+                height: 100%;
+                width:100%;
 
-        .slider-nav {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            label {
-                width: 10px;
-                height: 10px;
-                background-color: gray;
-                border-radius: 50%;
-                display: inline-block;
-                margin: 0 5px;
-                cursor: pointer;
-
-                &+label {
-                    margin-left: 5px;
+                img {
+                    height: 400px;
+                    width: 750px;
                 }
-            }
-
-            input[type="radio"]:checked~label {
-                background-color: black;
             }
         }
     }

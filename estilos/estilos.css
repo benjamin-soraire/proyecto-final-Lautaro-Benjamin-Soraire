@@ -26,14 +26,17 @@ body header.page-servicios {
 body header.page-empresas {
   background-image: url(../img/ciudad.jpg);
 }
+body header.nuestra-mision {
+  background-image: url(../img/sobre-nosotros.jpg);
+}
 body header h1 {
   color: #3597a6;
-  font-size: 50px;
+  font-size: 30px;
   text-shadow: 2px 2px 4px #000000;
 }
 body header h2 {
   color: #24646e;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 2px 2px 4px #000000;
 }
 @media (max-width: 768px) {
@@ -103,7 +106,7 @@ body header nav .menu li {
 body header nav .menu li a {
   color: #3597a6;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   padding: 10px;
   transition: background-color 0.2s ease-in-out;
@@ -193,7 +196,7 @@ body .content-mision .contenedor-mision {
 }
 body .content-mision .contenedor-mision .img-mision {
   width: 60%;
-  height: 750px;
+  height: 400px;
   margin-right: 25px;
   margin-left: 25px;
   border-radius: 20px;
@@ -210,13 +213,13 @@ body .content-mision .contenido-textos h3 {
 body .content-mision .contenido-textos h3 span {
   background-color: #3597a6;
   color: #000000;
-  border-radius: 50%;
+  border-radius: 40%;
   display: inline-block;
   text-align: center;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  box-shadow: 0 0 6px 0 #3597a6;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -318,22 +321,22 @@ body .galeria-serv .hover-galeria p {
   text-shadow: 2px 2px 4px #1c4b52;
 }
 @media (max-width: 1200px) {
-  body .galeria-serv .img-serv {
+  body .img-serv {
     width: 22%;
   }
 }
 @media (max-width: 992px) {
-  body .galeria-serv .img-serv {
+  body .img-serv {
     width: 28%;
   }
 }
 @media (max-width: 768px) {
-  body .galeria-serv .img-serv {
+  body .img-serv {
     width: 44%;
   }
 }
 @media (max-width: 576px) {
-  body .galeria-serv .img-serv {
+  body .img-serv {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -515,8 +518,7 @@ body .pie-pagina small {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  padding-right: 40px;
-  margin: 20px;
+  margin-bottom: 150px;
 }
 .nuestros-servicios .img-servicios {
   position: relative;
@@ -556,7 +558,7 @@ body .pie-pagina small {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .clases-de-seguros .seguro-1 {
   position: relative;
@@ -713,7 +715,7 @@ body .pie-pagina small {
   }
 }
 .contenedor-objetivo {
-  padding: 30px;
+  padding: 25px;
 }
 .contenedor-objetivo h3 {
   color: #3597a6;
@@ -815,60 +817,42 @@ body .pie-pagina small {
 }
 
 .cont-slides {
+  padding: 25px;
+}
+.cont-slides h3 {
+  color: #3597a6;
   text-align: center;
+  font-size: 60px;
+  padding: 90px;
 }
-.cont-slides h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.cont-slides .contenido-slides {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
 }
-.cont-slides .textos-obj {
-  margin-bottom: 40px;
+.cont-slides .contenido-slides .textos-obj {
+  text-align: center;
+  margin-right: 25px;
 }
-.cont-slides .textos-obj h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.cont-slides .contenido-slides .textos-obj h4 {
+  font-size: 40px;
+  color: #2d7d8a;
 }
-.cont-slides .textos-obj p {
-  font-size: 14px;
-  color: gray;
+.cont-slides .contenido-slides .textos-obj p {
+  color: #24646e;
+  font-size: 30px;
+  margin-top: 25px;
 }
-.cont-slides .slides-container {
-  position: relative;
-  margin-bottom: 30px;
+.cont-slides .contenido-slides .slides-container {
+  display: flex;
 }
-.cont-slides .slides-container .Slides {
-  display: none;
-}
-.cont-slides .slides-container .Slides img {
+.cont-slides .contenido-slides .slides-container .slide {
+  height: 100%;
   width: 100%;
-  max-width: 200px;
 }
-.cont-slides .slides-container input[type=radio] {
-  display: none;
-}
-.cont-slides .slides-container input[type=radio]:checked ~ .Slides {
-  display: block;
-}
-.cont-slides .slides-container .slider-nav {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.cont-slides .slides-container .slider-nav label {
-  width: 10px;
-  height: 10px;
-  background-color: gray;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
-}
-.cont-slides .slides-container .slider-nav label + label {
-  margin-left: 5px;
-}
-.cont-slides .slides-container .slider-nav input[type=radio]:checked ~ label {
-  background-color: black;
+.cont-slides .contenido-slides .slides-container .slide img {
+  height: 400px;
+  width: 750px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
