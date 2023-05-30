@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #242424;
+  background-color: #373737;
   font-family: empire;
 }
 body header {
@@ -28,6 +28,9 @@ body header.page-empresas {
 }
 body header.nuestra-mision {
   background-image: url(../img/sobre-nosotros.jpg);
+}
+body header.page-contactos {
+  background-image: url(../img/contacto.jpg);
 }
 body header h1 {
   color: #3597a6;
@@ -64,7 +67,7 @@ body header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #242424;
+  background-color: #373737;
   color: #3597a6;
   padding: 10px;
 }
@@ -427,7 +430,7 @@ body .contenedor-clientes .cards .card .contenido-texto-card p {
 }
 body .pie-pagina {
   width: 100%;
-  background-color: #242424;
+  background-color: #373737;
 }
 body .pie-pagina .titulo {
   color: #3597a6;
@@ -460,14 +463,14 @@ body .pie-pagina .grupo-1 a {
   align-items: center;
   text-decoration: none;
   color: #000000;
-  background-color: #242424;
+  background-color: #373737;
   text-align: center;
   font-size: 30px;
   padding: 15px;
 }
 body .pie-pagina .grupo-1 a:hover {
   color: #3597a6;
-  background-color: #242424;
+  background-color: #373737;
   text-shadow: 0 0 10px #000000;
   border-radius: 30px;
 }
@@ -487,7 +490,7 @@ body .pie-pagina .grupo-1 .red-social a {
 }
 body .pie-pagina .grupo-1 .red-social a:hover {
   color: #3597a6;
-  background-color: #242424;
+  background-color: #373737;
   text-shadow: 0 0 10px #000000;
 }
 body .pie-pagina .grupo-1 .grupo-2 {
@@ -853,6 +856,52 @@ body .pie-pagina small {
 .cont-slides .contenido-slides .slides-container .slide img {
   height: 400px;
   width: 750px;
+}
+
+.contenido-form form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #24646e;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: #1c4b52;
+}
+.contenido-form form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contenido-form form input[type=text],
+.contenido-form form input[type=email],
+.contenido-form form input[type=tel],
+.contenido-form form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #3597a6;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.contenido-form form input[type=date],
+.contenido-form form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #1c4b52;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.contenido-form form input[type=submit] {
+  background-color: #2d7d8a;
+  color: #373737;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contenido-form form input[type=submit]:hover {
+  background-color: #3597a6;
 }
 
 /*# sourceMappingURL=estilos.css.map */

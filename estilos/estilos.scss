@@ -10,7 +10,7 @@
 $colorsubtitulo: #121212;
 $colortexto: #1c4b52;
 $colorsubtitulo: #000000;
-$background: #242424;
+$background: #373737;
 $color2: #24646e;
 $color3: #2d7d8a;
 $color-transparencia3: rgba(64, 188, 216, 0.364);
@@ -32,7 +32,7 @@ body {
     background-color: $background ;
     font-family: empire;
 
-//index//
+    //index//
 
     header {
 
@@ -50,6 +50,10 @@ body {
 
         &.nuestra-mision {
             background-image: url(../img/sobre-nosotros.jpg);
+        }
+
+        &.page-contactos {
+            background-image: url(../img/contacto.jpg);
         }
 
         h1 {
@@ -416,32 +420,32 @@ body {
     }
 
 
-        //responsive//
+    //responsive//
 
-        @media (max-width: 1200px) {
-            .img-serv {
-                width: 22%;
-            }
+    @media (max-width: 1200px) {
+        .img-serv {
+            width: 22%;
         }
+    }
 
-        @media (max-width: 992px) {
-            .img-serv {
-                width: 28%;
-            }
+    @media (max-width: 992px) {
+        .img-serv {
+            width: 28%;
         }
+    }
 
-        @media (max-width: 768px) {
-            .img-serv {
-                width: 44%;
-            }
+    @media (max-width: 768px) {
+        .img-serv {
+            width: 44%;
         }
+    }
 
-        @media (max-width: 576px) {
-            .img-serv {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+    @media (max-width: 576px) {
+        .img-serv {
+            width: 100%;
+            margin-bottom: 20px;
         }
+    }
 
 
     //cards-de-clientes//
@@ -1055,6 +1059,7 @@ body {
 //movile//
 
 
+
 .cont-slides {
     padding: 25px;
 
@@ -1073,7 +1078,7 @@ body {
         .textos-obj {
             text-align: center;
             margin-right: 25px;
-            
+
             h4 {
                 font-size: 40px;
                 color: $color3;
@@ -1091,7 +1096,7 @@ body {
 
             .slide {
                 height: 100%;
-                width:100%;
+                width: 100%;
 
                 img {
                     height: 400px;
@@ -1099,5 +1104,59 @@ body {
                 }
             }
         }
+    }
+}
+
+//movile//
+
+.contenido-form {
+    form {
+        width: 400px;
+        margin: 0 auto;
+        background-color: $color2;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: $colortexto;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid $color4;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        input[type="date"],
+    select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid $colortexto;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: $color3;
+        color: $background;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: $color4;
+    }
     }
 }
